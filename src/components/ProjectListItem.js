@@ -2,11 +2,11 @@ import React from 'react';
 
 const ProjectListItem = ({ project }) => {
 	return (
-		<li>
-			{project.name}
+		<li className="list-group-item">
 			<div className="video-list media">
+			
 				<div className="media-left">
-					<img className="media-object image" src={project.image} />
+					<img className="media-object" src={project.image} />
 				</div>
 
 				<div className="media-body">
