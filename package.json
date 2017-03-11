@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.9.4"
+    "react-scripts": "0.9.4",
+    "react-social-icons": "^2.6.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
