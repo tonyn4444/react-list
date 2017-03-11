@@ -4,14 +4,12 @@ const ProjectListItem = ({ project }) => {
 	return (
 		<li className="list-group-item">
 			<div className="video-list media">
-			
+
 				<div className="media-left">
-					<img className="media-object" src={project.image} />
+				{project.name}
+					<img className="media-object" src={project.thumbnail_image} />
 				</div>
 
-				<div className="media-body">
-					<div className="media-heading">{project.name}</div>
-				</div>
 			</div>
 		</li>
 

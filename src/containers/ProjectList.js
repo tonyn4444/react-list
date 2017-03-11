@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect} from 'react-redux';
 import ProjectListItem from '../components/ProjectListItem';
+import ProjectListHeader from '../components/ProjectListHeader';
 
 class ProjectList extends Component {
 	renderProjectList() {
@@ -14,7 +15,10 @@ class ProjectList extends Component {
 	}
 	render() {
 		return (
-			<ul>{this.renderProjectList()}</ul>
+			<div>
+				<ProjectListHeader />
+					<ul>{this.renderProjectList()}</ul>
+			</div>
 		);
 	}
 }

@@ -1,9 +1,12 @@
+
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: 150px;
+  border-radius: 10%;
 }
 
 .App-header {
@@ -19,6 +22,11 @@
 
 img.media-object {
   max-width: 100%;
+  border-radius: 5%;
+  border-color: black;
+  border-style: solid;
+  /*border-style: solid;
+  border-color: #222;*/
 }
 
 .video-detail .details {
@@ -30,8 +38,25 @@ img.media-object {
 
 .list-group-item {
   cursor: pointer;
+  margin: 5px 40px 5px 70%;
+  /*margin-left: 70%;
+  margin-right: 40px;*/
+  border-style: solid;
+  border-color: #222;
+  vertical-align: text-top;
+  color: black;
+  font-family: Impact;
+  font-size: 125%;
+  background-color:grey;
 }
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.project-list-header {
+  margin-left: 68%;
+  font-family: Impact;
+  font-size: 250%;
+  text-decoration: underline;
 }
