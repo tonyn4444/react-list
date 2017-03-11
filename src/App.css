@@ -64,8 +64,22 @@ img.media-object {
   margin-bottom: 50%;
 }
 
+.social-icon-pointer {
+  cursor: pointer;
+}
+
 #intro {
   margin-top: -54%;
   position: relative;
 }
 
+.project-details {
+  max-width: 65%;
+  border-radius: 3%;
+  margin-right: 30%;
+  position: relative;
+}
+
+.project-list {
+  position: absolute;
+}

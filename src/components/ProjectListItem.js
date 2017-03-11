@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProjectListItem = ({ project }) => {
+const ProjectListItem = ({ project, selectProject }) => {
 	return (
-		<li className="list-group-item">
+		<li onClick={() => selectProject(project)} className="list-group-item">
 			<div className="video-list media">
 
 				<div className="media-left">
