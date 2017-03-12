@@ -6,7 +6,7 @@ class ProjectDetails extends Component {
 		// console.log(this.props);
 		return ( 
 			<div className="project-details-div">
-				<img className="project-details" src={this.props.active_project.thumbnail_image} />
+				<img className="project-details" src={this.props.active_project.thumbnail_image} alt="Problem loading..."/>
 			</div>
 		);
 	}

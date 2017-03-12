@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import portrait from './portfolio_pictures/portrait.jpg';
 import './App.css';
-import ProjectList from './containers/ProjectList';
 import { SocialIcon } from 'react-social-icons';
 import ProjectDetails from './containers/ProjectDetails';
+import ProjectListItem from './components/ProjectListItem';
 
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
         <p className="App-intro">
         </p>
         <div className="project-list">
-          <ProjectList />
+          <ProjectListItem />
           <ProjectDetails />
         </div>
       </div>

@@ -8,7 +8,9 @@ const INITIAL_STATE = { name: 'Finance-Go', thumbnail_image: financeGo }
 export default function(state = INITIAL_STATE, action) {
 	switch(action.type) {
 		case SELECTED_PROJECT:
-			return action.payload;
+			return action.payload.project;
+
+		default: 
+			return state;
 	};
-	return state;
 }

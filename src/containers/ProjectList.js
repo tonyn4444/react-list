@@ -6,25 +6,25 @@ import { bindActionCreators } from 'redux';
 import { selectProject } from '../actions';
 
 class ProjectList extends Component {
-	renderProjectList() {
-		return this.props.projects.map((project) => {
-			return (
-				<ProjectListItem 
-					project={project} 
-					key={project.name}
-					action={this.props.selectProject}
-				>
-					{project.name}
-				</ProjectListItem>
-			)
-		});	
-	}
+	// renderProjectList() {
+	// 	return this.props.projects.map((project) => {
+	// 		return (
+	// 			<ProjectListItem 
+	// 				project={project} 
+	// 				key={project.name}
+	// 				action={this.props.selectProject}
+	// 			>
+	// 				{project.name}
+	// 			</ProjectListItem>
+	// 		)
+	// 	});	
+	// }
 	render() {
 		// console.log(this.props.selectProject)
 		return (
 			<div className="project-list">
 				<ProjectListHeader />
-					<ul>{this.renderProjectList()}</ul>
+					<ul></ul>
 			</div>
 		);
 	}
