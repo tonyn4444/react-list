@@ -1,19 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect} from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { selectProject } from '../actions';
+import ProjectListHeader from './ProjectListHeader';
 
-const ProjectListItem = ({ project }) => {
-	return (
-		<li className="list-group-item">
-			<div className="video-list media">
+class ProjectListItem extends Component {
 
-				<div className="media-left">
-				{project.name}
-					<img className="media-object" src={project.thumbnail_image} />
+	renderProjectList() {
+		return this.props.projects.map((project) => {
+			return (
+				<li 
+					className="list-group-item" 
+					onClick={(project) => selectProject(project)}
+					key={project.name}
+				>
+				<div className="video-list media">
+					<div className="media-left">
+						{project.name}
+						<img className="media-object" src={project.thumbnail_image} alt="Problem loading..." />
+					</div>
+
 				</div>
+			</li>
+			)
+		});	
+	}
 
+	render() {
+		console.log(this.props);
+		return (
+			<div className="project-list">
+				<ProjectListHeader />
+				<ul>{this.renderProjectList()}</ul>
 			</div>
-		</li>
-
-	)
+		)
+	}
 }
 
-export default ProjectListItem;
+function mapStateToProps(state) {
+	return { projects: state.projects }
+}
+
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators({ selectProject }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectListItem);

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import portrait from './portfolio_pictures/portrait.jpg';
 import './App.css';
-import ProjectList from './containers/ProjectList';
 import { SocialIcon } from 'react-social-icons';
+import ProjectDetails from './containers/ProjectDetails';
+import ProjectListItem from './components/ProjectListItem';
 
 
 class App extends Component {
@@ -11,9 +12,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div id="social-icons">
-            <SocialIcon url="https://www.github.com/tonyn4444" />
-            <SocialIcon url="https://www.linkedin.com/in/tony-t-nguyen" />
-            <SocialIcon url="https://www.twitter.com/tonytweetertwit" />
+            <SocialIcon className="social-icon-pointer" url="https://www.github.com/tonyn4444" />
+            <SocialIcon className="social-icon-pointer" url="https://www.linkedin.com/in/tony-t-nguyen" />
+            <SocialIcon className="social-icon-pointer" url="https://www.twitter.com/tonytweetertwit" />
           </div>
 
           <div id="intro">
@@ -28,7 +29,8 @@ class App extends Component {
         <p className="App-intro">
         </p>
         <div className="project-list">
-          <ProjectList />
+          <ProjectListItem />
+          <ProjectDetails />
         </div>
       </div>
 
