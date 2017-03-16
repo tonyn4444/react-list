@@ -11,7 +11,7 @@ class ProjectListItem extends Component {
 			return (
 				<li 
 					className="list-group-item" 
-					onClick={(project) => selectProject(project)}
+					onClick={() => this.props.selectProject(project)}
 					key={project.name}
 				>
 				<div className="video-list media">
@@ -29,7 +29,7 @@ class ProjectListItem extends Component {
 	render() {
 		console.log(this.props);
 		return (
-			<div className="project-list">
+			<div className="project-list img-responsive">
 				<ProjectListHeader />
 				<ul>{this.renderProjectList()}</ul>
 			</div>
@@ -42,7 +42,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({ selectProject }, dispatch)
+	return bindActionCreators({ selectProject: selectProject }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectListItem);

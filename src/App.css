@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 250px;
+  height: 310px;
   padding: 20px;
   color: white;
 }
@@ -59,17 +59,18 @@ img.media-object {
   text-decoration: underline;
 }
 
-#social-icons {
-  margin-right: 87%;
-  margin-bottom: 50%;
+.social-icons {
+  margin-top: 5px;
+
 }
 
-.social-icon-pointer {
+.social-icon {
   cursor: pointer;
+  margin-left: 2px;
 }
 
 #intro {
-  margin-top: -54%;
+  /*margin-top: -54%*/;
   position: relative;
 }
 
@@ -78,8 +79,35 @@ img.media-object {
   border-radius: 3%;
   margin-right: 30%;
   position: relative;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+.project-detail-name {
+  margin-right: 31%;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 250%;
+  font-family: Impact;
+}
+
+.about-project {
+  margin-right: 38%;
+  margin-left: 5%;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 120%;
+  font-stretch: condensed;
 }
 
 .project-list {
   position: absolute;
 }
+
+.project-stack {
+  margin-top: 20px;
+}
+

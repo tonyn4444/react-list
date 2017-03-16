@@ -9,19 +9,26 @@ import ProjectListItem from './components/ProjectListItem';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container-fluid">
         <div className="App-header">
-          <div id="social-icons">
-            <SocialIcon className="social-icon-pointer" url="https://www.github.com/tonyn4444" />
-            <SocialIcon className="social-icon-pointer" url="https://www.linkedin.com/in/tony-t-nguyen" />
-            <SocialIcon className="social-icon-pointer" url="https://www.twitter.com/tonytweetertwit" />
-          </div>
+          
 
           <div id="intro">
             <img src={portrait} className="App-logo" alt="logo" />
-            <h2>Hi, I'm Tony</h2>
-            <h3>Here are some projects I've been working on</h3>
+            <div className="social-icons">
+              <span>
+                <SocialIcon url="https://www.github.com/tonyn4444" />
+                <SocialIcon url="https://www.linkedin.com/in/tony-t-nguyen" />
+                <SocialIcon url="https://www.twitter.com/tonytweetertwit" />
+              </span>
+            </div>
+            <div>
+              <h2>Hi, I'm Tony</h2>
+              <h3>Here are some projects I've been working on</h3>
+            </div>
           </div>
+
+
 
          
 
