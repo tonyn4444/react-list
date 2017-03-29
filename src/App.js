@@ -24,7 +24,7 @@ class App extends Component {
             </div>
             <div>
               <h2>Hi, I'm Tony</h2>
-              <h3>Here are some projects I've been working on</h3>
+              <h3>These are some projects I've been working on</h3>
             </div>
           </div>
 
